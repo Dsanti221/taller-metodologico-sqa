@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-21T15:46:14.189740" rpa="false" schemaversion="5">
+<suite id="s1" name="Datepicker" source="C:\Users\PCSTT\PycharmProjects\ProjectTaller\Test_Case_Front\Datepicker.robot">
+<kw name="Open Browser Keyword" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:14.748772" level="INFO">Opening browser 'Chrome' to base url 'https://jqueryui.com/datepicker/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-21T15:46:14.748368" elapsed="2.161995"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-21T15:46:16.910657" elapsed="0.698737"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:19.610158" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:17.609619" elapsed="2.000669"/>
+</kw>
+<doc>Abre el navegador con la url de la aplicacion.</doc>
+<status status="PASS" start="2025-10-21T15:46:14.747152" elapsed="4.863258"/>
+</kw>
+<test id="s1-t1" name="Click on the date field" line="10">
+<kw name="Given Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:19.631067" level="INFO">Current page contains text 'Datepicker'.</msg>
+<arg>Datepicker</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-21T15:46:19.611263" elapsed="0.019906"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:21.631975" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:19.631490" elapsed="2.000609"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:21.730038" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="formulario_visible.png"&gt;&lt;img src="formulario_visible.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Reports_uno/formulario_visible.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-21T15:46:21.632442" elapsed="0.097717"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:21.730902" level="INFO">Selecting frame '//*[@id="content"]/iframe'.</msg>
+<arg>//*[@id="content"]/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-10-21T15:46:21.730487" elapsed="0.037084"/>
+</kw>
+<kw name="When Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:21.768222" level="INFO">Clicking element '//*[@id="datepicker"]'.</msg>
+<arg>//*[@id="datepicker"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:46:21.767968" elapsed="0.185343"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:23.956269" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:21.955572" elapsed="2.000842"/>
+</kw>
+<kw name="Then Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:24.063689" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="calendario_emergente.png"&gt;&lt;img src="calendario_emergente.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Reports_uno/calendario_emergente.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-21T15:46:23.956859" elapsed="0.106976"/>
+</kw>
+<doc>CP1(Aperura del calendario) Ingresa a la pagina y abre el calendario</doc>
+<status status="PASS" start="2025-10-21T15:46:19.610512" elapsed="4.453716"/>
+</test>
+<test id="s1-t2" name="Select the date on the form" line="21">
+<kw name="Given Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:24.079079" level="INFO">Current page contains text 'Datepicker'.</msg>
+<arg>Datepicker</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-21T15:46:24.065591" elapsed="0.013613"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:26.080018" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:24.079528" elapsed="2.000624"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:26.179667" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="formulario_visible_dos.png"&gt;&lt;img src="formulario_visible_dos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Reports_uno/formulario_visible_dos.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-21T15:46:26.080550" elapsed="0.099238"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:26.180368" level="INFO">Selecting frame '//*[@id="content"]/iframe'.</msg>
+<arg>//*[@id="content"]/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-10-21T15:46:26.180125" elapsed="0.032297"/>
+</kw>
+<kw name="When Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:26.213000" level="INFO">Clicking element '//*[@id="datepicker"]'.</msg>
+<arg>//*[@id="datepicker"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:46:26.212777" elapsed="0.139228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:28.353087" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:26.352353" elapsed="2.000871"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:28.448464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="calendario_emergente_dos.png"&gt;&lt;img src="calendario_emergente_dos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Reports_uno/calendario_emergente_dos.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-21T15:46:28.353614" elapsed="0.094965"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:28.449144" level="INFO">Clicking element '//a[text()="15"]'.</msg>
+<arg>//a[text()="15"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:46:28.448921" elapsed="0.152472"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:46:30.602751" level="INFO">Slept 2 seconds.</msg>
+<arg>${WAIT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:46:28.602323" elapsed="2.000664"/>
+</kw>
+<kw name="Then Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:46:30.688056" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="fecha_seleccionada.png"&gt;&lt;img src="fecha_seleccionada.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Reports_uno/fecha_seleccionada.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-10-21T15:46:30.603888" elapsed="0.084281"/>
+</kw>
+<doc>CP2(Seleccion de fecha valda)Ingresa a la pagina y abre el calendario</doc>
+<status status="PASS" start="2025-10-21T15:46:24.064904" elapsed="6.623573"/>
+</test>
+<kw name="Close Browser Keyword" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-21T15:46:30.689642" elapsed="2.235594"/>
+</kw>
+<doc>Cierra el navegador abierto de la ejecucion actual.</doc>
+<status status="PASS" start="2025-10-21T15:46:30.689400" elapsed="2.236019"/>
+</kw>
+<doc>Casos de prueba para Taller SQA-SANTIAGO VALLEJO</doc>
+<status status="PASS" start="2025-10-21T15:46:14.192112" elapsed="18.733390"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Datepicker" id="s1" pass="2" fail="0" skip="0">Datepicker</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
