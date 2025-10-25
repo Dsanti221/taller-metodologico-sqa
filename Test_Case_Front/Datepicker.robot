@@ -16,7 +16,6 @@ Click on the date field
     When Click Element    //*[@id="datepicker"]
     Sleep   ${WAIT}
     Then Capture Page Screenshot    ../Reports_uno/calendario_emergente.png
-    #robot -d Reports_uno -t "Select the date on the form" Test_Case_Front/Datepicker.robot
 
 Select the date on the form
     [Documentation]    CP2(Seleccion de fecha valda)Ingresa a la pagina y abre el calendario
